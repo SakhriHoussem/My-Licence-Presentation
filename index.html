@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<section>
+						<div>
+
+							Université des Sciences et de la Technologie d'Oran - Mohamed Boudiaf<br>
+							Faculté des Mathematique et informatique <br>
+							Departement d'Informatique
+
+						</div>
+						<div><img style="background: transparent;border: 0; " src="img/usto.png" alt=""></div>
+
+					</section>
+					<section>
+						<h4>Presentation de projet fin d'etude </h4>
+					<h2>REALISATION D'UNE APPLICATION WEB DE GESTION DES EQUIPEMENTS POUR LA SOCIETE DE L'EAU ET DE L'ASSAINISS
+						EMENT (SEOR) </h2>
+					</section>
+					<section>
+					<h4>Presenté PAR </h4>
+					<h4>ARABI ABDELILLAH & SAKHRI HOUSSEM EDDINE </h4>
+					</section>
+					<section>
+					<h3> Encadré PAR </h3>
+					<h4>Mlle BENDOUKHA HAYAT </h4>
+					</section>
+					<section>
+					<h4> Examiné PAR </h4>
+					<h4>Mr  NEGGAZ NABIL </h4>
+				</section>
+					<section>
+						<img style="background: transparent;border: 0; " src="img/seor.png" alt="">
+						<h4>Stage a la societe d'eau et de l'assainissement (SEOR)</h4>
+						<h4>encadré par</h4>
+						<h4>MR Ait Noureddine </h4>
+					</section>
+
+				</section>
+				<section>
+					<section>l'objectif de ce travail est d'informatiser l'activité de
+						gestion du stock au niveau du département
+						du <span>HSE</span> dans la <span>SEOR</span>. Pour cela, nous avons  réalisé une application interactive
+						permettant de gérer les différents
+						traitements de cette activité et de satisfaire les besoins des différents utilisateurs impliqués
+						dans ce processus de gestion.
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>PLAN DE LA PRéSENTATION</h2>
+						</section>
+						<section>
+							<ol>
+							<li>Presentation de la seor</li>
+							<li>Gestion de stock</li>
+							<li>Outil de conception d'application</li>
+							<li>Implementation d'application</li>
+							<li>Description de l'application</li>
+							<li>Conclusion et Perspectives</li>
+							</ol>
+					</section>
+
+
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>SEOR 2008-2016: </h2><h4> UN DEVELOPPEMENT ININTERROMPU</h4>
+						</section>
+						<section>
+							<ul>
+
+
+						<li><span>Le 1er avril 2008,</span> une  société par actions
+						détenue par <span>l'Algérienne des eaux(ADE)</span> et <span>l'Office da national
+								de l'assainissement(ONA)</span> a
+						vu le jour, au terme d'une fusion entre les deux entités de la wilaya d'Oran.
+						<li>Pour une meilleure efficacité et pour essayer d'offrir un meilleur service aux habitants,
+						l'entreprise espagnole Agbar a été chargée de la délégation de la gestion de la
+								<span>SEOR</span>, pour une période de cinq ans et demi.
+						<li>Une fois la période de gestion déléguée terminée,
+						Agbar continue d'assurer une assistance technique, ce qui fut fait partir du <span>30 juin 2014</span>.</li>
+
+</ul>
+					</section>
+					<section>
+
+						<h2>MISSIONS ET  OBJECTIFS DE LA SEOR </h2>
+					</section>
+					<section>
+						<p>Dès sa création, la <span>SEOR</span> s’est vue confier les missions suivantes</p>
+						<ul>
+						<li>Garantir la qualité de l’eau et  la distribution en H24</li>
+						<li>Améliorer les temps de réponse pour les interventions</li>
+						<li>Réaliser le projet de télé contrôle</li>
+
+						<li>Assurer la sectorisation des réseaux de distribution</li>
+						<li>Réaliser la maintenance les installations hydraulique et électromécaniques</li>
+						<li>Gestion de l´assainissement</li>
+						<li>Formation de tout le personnel</li>
+
+
+						</ul>
+					</section>
+					<section>
+
+						<h2>ORGANISATION SEOR </h2>
+					</section>
+					<section>
+						<h4>NIVEAU CENTRAL</h4>
+
+						<img width="900" data-src="img/cen.png" alt="cent">
+					</section>
+					<section>
+					<h4>NIVEAU DECENTRALISE</h4>
+					<img width="900" data-src="img/decentralise.png" alt="cent">
+					</section>
+					<section>
+					<h2>PRESENTATION  DU DEPARTEMENT HYGIENE ET SECURITE</h2>
+					</section>
+					<section>
+					<h4>ORGANIGRAMME DU DEPARTEMENT HYGIENE ET SECURITE </h4>
+					<img width="900" data-src="img/hse.png" alt="cent">
+					</section>
+					<section>
+					<h2>MISSION DU DEPARTEMENT HSE</h2>
+					</section>
+					<section>
+					<ul>
+					<li>Inspections au niveau des installations de l’assainissement et <span>AEP</span> et
+						station de relevage   de  la  <span>SEOR</span></li>
+					<li>Des  recommandations  ont  été  envoyés  aux  responsables  et  aux  agents
+						operateurs pour le respect des normes de sécurité,
+					ainsi que la propreté des lieux</li>
+
+					<li>Incorporation  des  techniciens  de <span>HSE</span>  pour
+					réaliser des évaluations de risques des installations de l’assainissement et <span>AEP</span> et station
+					de relevage de la <span>SEOR</span> et une planification de la formation</li>
+					<li>visites sur des chantiers <span>AEP</span> et assainissement</li>
+
+					</ul>
+					</section>
+					<section>
+					<h2>PRESENTATION  DU DEPARTEMENT LOGISTIQUE </h2>
+					</section>
+					<section>
+					<h4>ORGANIGRAMME DU DEPARTEMENT LOGISTIQUE  </h4>
+					<img width="900"data-src="img/logisiti.png" alt="cent">
+					</section>
+					<section>
+					<h4>SERVICES DU DEPARTEMENT LOGISTIQUE  </h4>
+					<p>Le Département <span>LOGISTIQUE</span> se compose de six services :</p>
+						<ul>
+
+							<li>SERVICE APPROVISIONNEMENT</li>
+							<li>SERVICE GESTION DES STOCKS</li>
+							<li>SERVICE ACHATS</li>
+							<li>SERVICE PARC ROULANT</li>
+							<li>SERVICE PATRIMOINE</li>
+							<li>SERVICE MOYENS GENERAUX</li>
+						</ul>
+					</section>
+
+
+				</section>
+				<section>
+					<section>
+
+						<h2>LA GESTION DU STOCK DANS LA SEOR </h2>
+					</section>
+					<section>
+						<ul>
+							<li>Chaque structure  dresse  un  plan d’action .</li>
+							<li>Le  département <span>HSE</span> lance un avis d’appel d’offre national
+								sur les <span>EPI</span> et <span>EPC</span> </li>
+							<li>Le choix du fournisseur est validé auprès de la commission interne
+								lors des ouvertures des plis.</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>La distribution des <span>EPI</span> et <span>EPC</span>  se fait selon le règlement interne à savoir : </li>
+							<ol>
+								<li>Demande d’approvisionnement de chaque structure.</li>
+								<li>Liste nominative de chaque bénéficiaire <span>(taille et pointure)</span>.</li>
+								<li>L’étape suivante est la dotation.</li>
+							</ol>
+
+						</ul>
+					</section>
+
+					<section>
+
+						<ul>
+
+							<li>Validation du Demande d'Approvisionnement</li>
+
+							<li>Instauration du  Bon de Sortie d’équipement par le Magasinier.</li>
+
+							<li>Apres chaque opération de distribution  des équipements  par la logistique un nouveau inventaire est établi instantanément.</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>Calcul du cout total de chaque structure</li>
+
+							<li>Après l’achèvement de l’opération sous-indiquées un calcul d’écart est déterminé pour le prendre en considération  l’année suivante.</li>
+
+						</ul>
+					</section>
+					<section>
+						<h2>CRITIQUES DE L’EXISTANT</h2>
+					</section>
+					<section>
+						<p>L’objectif de cette étape consiste à faire ressortir toutes les anomalies, pour tenter d’étudier les causes profondes et chercher des solutions adéquates.</p>
+						<ul>
+							<li>La majorité du travail se fait manuellement. </li>
+							<li>L’absence de l’utilisation de l’outil informatique dans certains services. </li>
+							<li>Difficulté dans la recherche des documents. </li>
+							<li>Accès difficile aux documents. </li>
+
+						</ul>
+					</section>
+					<section>
+						<h2>PROPOSITION DES NOUVELLES  SOLUTIONS </h2>
+					</section>
+					<section>
+						<ul>
+							<li>Développement d’une Application Web de gestion de stock.</li>
+							<li>Simplification du travail en réduisant le traitement des différentes opérations en un temps réel. </li>
+							<li>Eliminer la redondance en matière de l’information.</li></ul>
+					</section>
+					<section>
+						<ul>
+							<li>Annuler les documents répétitifs. </li>
+							<li>Développer des actions de formation relatives à certain logiciel. </li>
+							<li>Faciliter l’accès au document on introduisant des outils informatique. </li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>Gérer les commandes, les demandes d’approvisionnement.</li>
+							<li>Gérer les relations avec les fournisseurs, les  gérances, les directions.</li>
+							<li>Gérer les équipements <span>(ajouter, modifier ou supprimer)</span>.</li>
+
+						</ul>
+					</section>
+
+				</section>
+				<section>
+				<section>
+					<h2>MODELE CONCEPTUEL DES DONNEES (<span>MCD</span>)</h2>
+					</section>
+				<section>
+				<img width="900" data-src="img/mcd.png" alt="cent">
+				</section>
+				</section>
+				<section>
+				<section>
+
+					<h2>LANGAGE DE PROGRAMMATION</h2>
+					</section>
+				<section>
+					<h3>CHOIX DU LANGAGE DE PROGRAMMATION <span>‘PHP’</span></h3>
+				</section>
+					<section>
+					<img style="background: transparent; border: 0px transparent" src="img/php.png" alt="">
+
+				</section>
+					<section>
+					<p>Pour la réalisation de notre Application web  nous avons choisi <span>PHP</span> un langage de programmation
+						libre qui a été conçu pour créer des sites <span>"vivants"</span> (<span>dynamique</span>) mais pouvant également fonctionner comme n'importe quel langage interprété de façon locale.
+					<span>PHP</span> est un langage impératif orienté-objet.
+					</section>
+					<section>
+					<img style="background: transparent; border: 0px transparent" src="img/html_css.png" alt="">
+
+				</section>
+				<section>
+					<img style="background: transparent; border: 0px transparent" src="img/mysql.png" alt="">
+
+					</section>
+
+					<section>
+						<img style="background: transparent; border: 0px transparent" src="img/jquery_logo.png" alt="">
+
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+				<h2>CHOIX DE L’OUTIL DE DEVELOPPEMENT</h2>
+				</section>
+				<section>
+				<p>Nous avons choisi comme outil de développement le <span>XAMPP</span> Server qui permet de développer
+					des applications Web dynamiques à l'aide du serveur Apache, du langage de scripts <span>PHP</span>
+					et d'une base de données <span>MYSQL</span>.
+La plate-forme possède également <span>PHPMyAdmin</span>.</p>
+					</section>
+					<section>
+					<h2>XAMPP</h2>
+
+<img width="700" data-src="img/xampp.png" alt="cent">
+					</section>
+					<section>
+					<h2>PHPMyAdmin</h2>
+
+				<img width="700" data-src="img/pmd.png" alt="cent">
+					</section>
+
+							<section>
+							<h2>JMerise</h2>
+								<img width="700" data-src="img/merise.png" alt="cent">
+							</section>
+
+				</section>
+				<section>
+				<section>
+				<h2>CHOIX DE L’EDITEUR DE TEXTE </h2>
+			</section>
+			<section>
+				<h3>JETBRAINS PHPSTROM</h3>
+				<img width="700" data-src="img/phpstrom.png" alt="cent">
+				</section>
+				</section>
+				<section>
+					<section>
+					<h2>PRESENTATION DE NOTRE TRAVAIL </h2>
+				</section>
+				<section>
+					<p>Notre application est centrée sur le domaine de l’informatique,
+					elle permet de faciliter les taches aux utilisateurs,
+					économiser le temps,
+					et permet d’informatiser et d’automatiser ces opérations :</p>
+					</section>
+					<section>
+					<ul>
+					<li>L’acquisition d’ un équipement.</li>
+					<li>Demande d'un équipement.</li>
+					<li>Modifier la quantité des équipements demandées.</li>
+					<li>Valider les demandes.</li>
+					<li>Doter des équipements à une Gérance.</li>
+					<li>Voir l’état du stock à n’importe quel moment.</li>
+					<li>Faciliter la communication entre les gérances et le département <span>HSE</span> et  le Magasinier.</li>
+					</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+					<h2>DESCRIPTION DE L'Application</h2>
+				</section>
+				<section>
+					<h4>PAGE DE CONNEXION</h4>
+					<img width="700"data-src="img/login.png" alt="cent">
+					</section>
+					<section>
+					<h4>PAGE D’ACCUEIL </h4>
+					<img width="700" data-src="img/index.jpg" alt="cent">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Conclusion</h3>
+					</section>
+
+					<section>
+						<p>Notre travail a débuté par la compréhension du contexte de notre projet.
+							Ensuite, nous avons réalisé une étude de l'existant concernant les applications de gestion du stock,
+							durant la période du stage dans la Société qui a durée 6 mois, qui nous a permis de fixer les anomalies à éviter et
+							les objectifs à réaliser pour avoir un système satisfaisant. Puis, nous sommes passé à la l'étude conceptuelle de notre
+							Application. Par la suite, nous avons effectué l'implémentation de l'Application.</p>
+					</section>
+					<section>
+						<p>Ce projet a été très bénéfique pour nous car il nous a permis de renforcer et enrichir nos
+							connaissances théoriques dans le domaine de la conception, la programmation web et de mettre en
+							application nos connaissances acquises le long de nos études.
+							Il nous a  encore donné l'occasion de	maîtriser le langage de programmation <span>PHP</span>,
+							la base de données <span>MySQL</span> et de nous familiariser avec la conduite des projets informatiques.</p>
+					</section>
+					<section>
+						<p>En plus, ce projet était une bonne occasion pour réaliser un travail très concret, avec des
+							objectifs clairs et bien définis et de se familiariser avec l'environnement du travail et de la vie professionnelle.</p>
+					</section>
+					<section>
+						<p>En perspective, notre Application web de Gestion du Stock  peut être améliorée en ajoutant d'autres
+							fonctionnalités comme (Gestion des fournisseurs, Gestion des équipements en détail (taille des tenus, pointure),
+							le calcul de somme de chaque Gérance, le calcul d’écart).</p>
+					</section>
+				</section>
+				<section>
+				<section>
+					<h3>Remerciment</h3>
+				</section>
+					<section>
+					<p>Pour commencer, nous voulons adresser nos remerciements à notre encadreur de mémoire madame 	<span>BENDOUKHA Hayat</span>  ,
+						pour sa grande disponibilité et
+						ses encouragements tout au long de la rédaction de ce mémoire.
+					</p>
+					</section>
+				<section>
+
+
+					<p>Nous remercions également Monsieur <span>NEGGAZ Nabil</span>  notre jurry qui nous fait  l’honneur d’examiner notre travail.</p>
+				</section>
+					<section>
+						<p>nous tenons remercier  MR<span> Ait Noureddine</span>, chef de département HSE,
+							pour nous avoir accueillir au sein du département,
+							ainsi que toute l’équipe de travail.</p>
+
+				</section>
+
+				<section>
+					<h1>FIN</h1>
+				</section>
+				<section>
+					<h3>merci de  votre aimable attention</h3>
+				</section>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
